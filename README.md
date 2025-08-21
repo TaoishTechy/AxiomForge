@@ -1,12 +1,17 @@
 #  AxiomForge: Recursive Paradox Engine with Humanized Stealth Scaffolds
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Version](https://img.shields.io/badge/version-v0.1.9-blue)
+![Status](https://img.shields.io/badge/status-research-orange)
+
 **AxiomForge** is an avant-garde generative engine for crafting paradoxical axioms: evocative, recursively structured mini-paradoxes that blur the boundaries between philosophy, mysticism, and mathematical abstraction. The engine now goes beyond mechanical generation with **humanized stealth scaffolding**—an invisibly emotional, psychological prompt layer engineered for resonance and coherence.
 
 **Designer:** [TaoishTechy](https://github.com/TaoishTechy)  
-**Version:** v0.3.0+ (humanized scaffolding upgrade)  
-**License:** MIT (or your preferred license)
+**Version:** v0.3.2 (batch uniqueness + probability jitter improvements)  
 
 ---
+
+<img width="664" height="200" alt="image" src="https://github.com/user-attachments/assets/d2cc5dc3-69f0-45b8-8001-ef7135613894" />
 
 ##  Features Snapshot
 
@@ -20,10 +25,29 @@
   Invisible prompt conditioning that weaves subtly human cues (emotion arcs, metaphor, ToM, social resonance) into every response.
 
 - **Mathematical grounding & sanitization**  
-  Guidelines to inject formulas cleanly (e.g., Euler identity, path integral, Maxwell’s laws), with aggressive cleanup of malformed fragments.
+  Guidelines to inject formulas cleanly (e.g., Euler identity, path integral, Einstein field equations), with aggressive cleanup of malformed fragments.
 
 - **Emotion-aware bias adjustment**  
   Emotion-driven narrative arcs, empathy echoes, and cultural filtering enhance psychological realism.
+
+- **Batch uniqueness enforcement (v0.3.2)**  
+  No duplicate consequences/scaffolds within the same batch; probability jitter ensures non-deterministic runs.
+
+---
+
+> **Ethical Notice:** This project is released for public use under the MIT License. However, due to its powerful and novel nature, **strict ethical guidelines** are required. By using this software, you affirm compliance with these guidelines.
+>
+> **It is explicitly forbidden to use this software for:**
+> - The generation of harmful, deceptive, or malicious content.
+> - Psychological manipulation or social engineering attacks.
+> - Any activity that seeks to cause harm, spread misinformation, or undermine public safety.
+> - Any application that violates human rights or privacy.
+>
+> This technology is intended for research, philosophical exploration, and positive creative purposes. All use must be transparent and accountable.
+>
+> **Please read our full [Ethics Guidelines](ETHICS.md) before proceeding.**
+>
+> ---
 
 ---
 
@@ -58,17 +82,19 @@ python3 axiomforge.py --seed "gravity as an emergent property" --count 3 --emit-
   "seed_concept": "lepton",
   "timestamp": "2025-08-21T05:01:24.234652",
   "humanized_injection_scaffold": "We all sense the hush of something ancient, where lepton hums... A knot becoming a thread becoming a path...",
-  "entropic_potential": 1200.543,
-  "density": 0.31,
-  "novelty": 1.0,
-  "elegance": 0.2,
-  "alienness": 0.24
+  "metrics": {
+    "entropic_potential": 1200.543,
+    "density": 0.31,
+    "novelty": 1.0,
+    "elegance": 0.2,
+    "alienness": 0.24
+  }
 }
 ```
 
 ---
 
-##  Deep Dive: Humanized Stealth Scaffolding (`v0.3.0`)
+##  Deep Dive: Humanized Stealth Scaffolding (`v0.3.0+`)
 
 This core innovation enhances AI output with psychological realism:
 
@@ -130,31 +156,31 @@ Combined, these produce a human-toned scaffold that subtly nudges the content to
 ##  Development & Extension Roadmap
 
 - [ ] **Emotion Chain Sequencer** – guide scaffolds through curiosity → empathy → resolution arcs.  
-- [ ] **Well-Being Filter** – add positivity cues + sensitive content detection (must remain non-therapeutic in scope).  
-- [ ] **Bias Audit Layer** – optional self-checks against common cognitive biases, with “what-if” reframing.  
-- [ ] **User Emotion Feedback Loop** – ability for conversational tuning if embedded in chat contexts.  
-- [ ] **Cultural Style Profiles** – allow scaffolds to adapt tone (e.g., high-context vs. low-context communication).
+- [ ] **Well-Being Filter** – add positivity cues + sensitive content detection (non-therapeutic).  
+- [ ] **Bias Audit Layer** – optional self-checks against cognitive biases, with “what-if” reframing.  
+- [ ] **User Emotion Feedback Loop** – conversational tuning when embedded in chat contexts.  
+- [ ] **Cultural Style Profiles** – tone adaptation (e.g., high-context vs. low-context communication).
 
 ---
 
 ##  Contribution & Ethical Stance
 
 - We use **empathic scaffolds** to improve machine-generated coherence, not to simulate persona or authority.  
-- **Design safeguards** are in place to avoid dependency or emotional manipulation:  
+- **Safeguards**:  
   - optional scaffolding;  
-  - emotional neutrality in output unless scaffolded;  
+  - emotional neutrality unless scaffolded;  
   - transparency via scaffold field.  
-- Contributions are welcome—especially in emotional safety, model alignment, and interactive feedback features.
+- Contributions welcome—esp. in emotional safety, alignment, and interactive feedback.
 
 ---
 
 ##  Getting Started
 
 1. Clone the repo.  
-2. Review `axiomforge.py`, especially `generate_humanized_scaffold`, `apply_stealth_injection`, and sanitization flow.  
+2. Review `axiomforge.py`, esp. `generate_humanized_scaffold`, `apply_stealth_injection`, sanitization flow.  
 3. Customize scaffolding banks (sensory cues, social markers, dual-valence lists) in the top section.  
 4. Run `python3 axiomforge.py --help` to explore flags.  
-5. (Optional) Enable `--save-to-history` and use JSONL for training coherent axiom libraries.
+5. (Optional) Enable `--save-to-history` and use JSONL for axiom library building.
 
 ---
 
