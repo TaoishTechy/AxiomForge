@@ -1,4 +1,4 @@
-# Axiom Collection Summary
+# Axiom Collection Summary (EntroVerse Codex)
 **Timestamp:** August 25, 2025
 
 ---
